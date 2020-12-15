@@ -11,8 +11,8 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
-    <!-- <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script> -->
-    <link rel="stylesheet" href="./public/css/1.css">
+    <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+    <link rel="stylesheet" href="http://localhost/new/public/css/1.css">
     <title>Amin</title>
 </head>
 <body>
@@ -29,7 +29,7 @@
             <?php foreach($getalls as $getall) : ?>
                 <tr>
                     <td><?php echo $getall[0]?></td>
-                    <td><a href="./home/showpost/<?php echo $getall[0]?>"><img src="<?php echo $getall[3]?>" alt="<?php echo $getall[1]?>"></a></td>
+                    <td><a href="http://localhost/new/home/showpost/<?php echo $getall[0]?>"><img src="<?php echo $getall[3]?>" alt="<?php echo $getall[1]?>"></a></td>
                     <td><?php echo $getall[1]?></td>
                 </tr>
             <?php endforeach; ?>
