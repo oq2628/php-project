@@ -1,0 +1,44 @@
+/* .td-flex{
+    display: flex;
+}
+.table-bordered>tbody>tr>td.td-flex{
+    border: none;
+} */
+.actions:active{
+  outline: none;
+}
+td, th {
+  text-align: center;
+}
+td>a>img {
+  width: 170px;
+  height: 120px;
+}
+a {
+  border-radius: 30px;
+}
+.page-item.disabled .page-link {
+  border-radius: 30px;
+}
+div.dataTables_wrapper div.dataTables_paginate ul.pagination{
+  justify-content: center;
+}
+.inputfile{
+    border: none;
+    width: min-content;
+    margin-bottom: 10px;
+    padding-left: 0px;
+}
+.button-content{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.btn-all{
+    border-radius: 20px;
+}
+.img-circle {
+    border-radius: 100px;
+    margin: 5px;
+}

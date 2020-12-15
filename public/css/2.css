@@ -1,0 +1,26 @@
+.inputfile{
+    border: none;
+    width: min-content;
+    margin-bottom: 10px;
+    padding-left: 0px;
+}
+.button-content{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.btn-all{
+    border-radius: 20px;
+    margin: 5px;
+}
+.img-circle {
+    border-radius: 100px;
+}
+.slt{
+    max-width: max-content;
+}
+.img-show{
+    width: 200px;
+    height: 200px;
+}
