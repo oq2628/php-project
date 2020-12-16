@@ -1,10 +1,8 @@
 <?php
-    // include_once "./core/connDB.php";
     class get_data extends connDB {
         function get_data(){
             $this->conn = mysqli_connect($this->servername, $this->username, $this->password);
-            // var_dump(mysqli_select_db($this->conn, $this->dbname));
-            // var_dump(mysqli_select_db($this->conn, $this->dbname));
+            mysqli_select_db($this->conn, $this->dbname);
             
 
 

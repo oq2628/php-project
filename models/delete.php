@@ -17,9 +17,6 @@ class delete extends connDB{
                     margin-bottom: 0;
                     font-weight: 400;
                     text-align: center;
-                    white-space: nowrap;
-                    vertical-align: middle;
-                    touch-action: manipulation;
                     cursor: pointer;
                     background-image: none;
                     border: 1px solid transparent;
@@ -27,7 +24,6 @@ class delete extends connDB{
                     font-size: 14px;
                     line-height: 1.42857143;
                     border-radius: 4px;
-                    user-select: none;
                     "><a href="http://localhost/new/admin">Back</a>
                   </div>';
         } else {

@@ -9,8 +9,6 @@ class getbyid extends connDB {
         $rows = mysqli_fetch_all($result);
         
         if ($result->num_rows > 0) {
-            // echo "data is exits";
-            // return true;
         } else {
             echo "0 results";
         }
