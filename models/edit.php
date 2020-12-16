@@ -4,7 +4,7 @@ class edit extends connDB{
         $this->conn = mysqli_connect($this->servername, $this->username, $this->password);
         mysqli_select_db($this->conn, $this->dbname);
 
-        $sql="UPDATE `mydb`.`testdb` SET `title`='$title', `description`='$description', `image`='$choosefile', `status`='$status' WHERE `id`='$id'";
+        $sql="UPDATE `gg`.`testdb` SET `title`='$title', `description`='$description', `image`='$choosefile', `status`='$status' WHERE `id`='$id'";
         // echo $id;
         if ($this->conn->query($sql) === TRUE) {
           echo '<div style="color:5cb85c; text-align:center; margin-top:20px;"><h1>New record created successfully</h1></div><br/>';
@@ -29,7 +29,7 @@ class edit extends connDB{
                   line-height: 1.42857143;
                   border-radius: 4px;
                   user-select: none;
-                  "><a href="..">Back</a>
+                  "><a href="http://localhost/new/">Back</a>
                 </div>';
           } else {
             echo "Error: " . $sql . "<br>" . $this->conn->error;

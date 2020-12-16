@@ -8,10 +8,11 @@ class admin{
 
     function show(){
         require_once "./models/getData.php";
+        require_once "./views/view.php";
         $get=new get_data();
         $getalls=$get->get_data();
 
-        require_once "./views/view.php";
+        // require_once "./views/view.php";
         $postview=new view();
         $postview->fullview($getalls);
     }
@@ -29,12 +30,13 @@ class admin{
     function news(){
         require_once "./views/news.php";
         $news=new news();
+        $new=$news->news();
     }
 
     function inserts(){
         if (isset($_POST["submit"])){
             require_once "./models/insert.php";
-            $link="./models/image/";
+            $link="http://localhost/new/models/image/";
             $title=$_POST["textarea"];
             $description=$_POST["textarea1"];
             $s=$_POST["myfile"];

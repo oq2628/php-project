@@ -1,8 +1,7 @@
 <?php
 class news{
-  function __construct(){
+  function news(){
     require_once "./template/news.php";
-
   }
 }
 ?>

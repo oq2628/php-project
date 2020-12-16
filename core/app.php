@@ -1,8 +1,8 @@
 <?php
 class App
 {
-    protected $controller='home';
-    protected $action='show';
+    protected $controller;
+    protected $action;
     protected $params=[];
     // protected $arr=[];
 
@@ -10,7 +10,7 @@ class App
  
         $arr = $this->UrlProcess();
         // Controller
-        $this->controller="home";
+        $this->controller="admin";
         if($arr!=null){
             if( file_exists("./controllers/".$arr[0].".php") ){
                 $this->controller = $arr[0];
@@ -22,6 +22,7 @@ class App
         $this->controller = new $this->controller;
 
         // Action call function of controllers
+        $this->action="show";
         if(isset($arr[1])){
             if( method_exists( $this->controller , $arr[1]) ){
                 $this->action = $arr[1];
@@ -38,6 +39,7 @@ class App
 
     function UrlProcess(){
         if( isset($_GET["url"]) ){
+            // print_r(explode("/", filter_var(trim($_GET["url"], "/"))));
             return explode("/", filter_var(trim($_GET["url"], "/")));
         }
     }

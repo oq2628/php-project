@@ -3,6 +3,8 @@
         function __construct(){
             require_once "./core/connDB.php";
             require_once "./models/getData.php";
+            $connectdb=new connDB();
+            $connecteddb=$connectdb->connectDB();   
         }
 
         function show(){

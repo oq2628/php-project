@@ -1,14 +1,14 @@
 <?php
     // include_once "./core/connDB.php";
     class get_data extends connDB {
-        public $params=[];
         function get_data(){
             $this->conn = mysqli_connect($this->servername, $this->username, $this->password);
-            mysqli_select_db($this->conn, $this->dbname);
+            // var_dump(mysqli_select_db($this->conn, $this->dbname));
+            // var_dump(mysqli_select_db($this->conn, $this->dbname));
             
 
 
-            if (!mysqli_select_db($this->conn,'mydb'))     
+            if (!mysqli_select_db($this->conn,$this->dbname))
                 die("Unable to select database: " . mysqli_error());
             // Thông báo lỗi nếu chọn CSDL thất bại
                 $sql_stmt = "SELECT * FROM testdb"; 

@@ -6,20 +6,19 @@
     <title>Edit</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../public/css/2.css">
+    <!-- <link rel="stylesheet" href="http://localhost/new/public/css/2.css"> -->
   </head>
   <body>
-  <?php foreach($getbyids as $getbyid) : ?>
-    <form action="../edit/<?php echo $getbyid[0]?>" method="POST">
-     <div class="container">
-      <div class="form-group row">
-        <h2 class="col-4 col-form-label">Edit</h2>
-        <div class="col-8 button-content">
-        <a href=".."><button type="button" class="btn btn-primary btn-all">Show</button></a>
-        <a href=".."><button type="button" class="btn btn-light btn-all">Back</button></a>
+  <div class="form-group row">
+        <h2 class="col-4 col-form-label" style="text-align: center;">Edit</h2>
+        <div class="col-8 button-content"style="display:flex;">
+        <a href="http://localhost/new/admin" style="margin:auto;"><button type="button" class="btn btn-light btn-all">Back</button></a>
         </div>
       </div>
       <hr>
+  <?php foreach($getbyids as $getbyid) : ?>
+    <form action="http://localhost/new/admin/edit/<?php echo $getbyid[0]?>" method="POST">
+     <div class="container">
 
       <div class="form-group row">
         <label for="textarea" class="col-4 col-form-label">Title</label> 
@@ -65,19 +64,9 @@
     </form>
   <?php endforeach; ?>
   <script type="text/javascript">
-      // function PreviewImage() {
-      //     var oFReader = new FileReader();
-      //     oFReader.readAsDataURL(document.getElementById("myfile").files[0]);
-      //     oFReader.onload = function (oFREvent) {
-      //         document.getElementById("preview").src = oFREvent.target.result;
-      //     };
-      // };
-
-
     var loadFile = function (event) {
 	    var myfile = document.getElementById ('preview');
       myfile.src = URL.createObjectURL (event.target.files [0]);
-      console.log(myfile);
     };
   </script>
   </body>

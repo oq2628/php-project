@@ -30,7 +30,7 @@ class insert extends connDB{
                     line-height: 1.42857143;
                     border-radius: 4px;
                     user-select: none;
-                    "><a href="..">Back</a>
+                    "><a href="http://localhost/new/">Back</a>
                   </div>';
           } else {
             echo "Error: " . $sql . "<br>" . $this->conn->error;
