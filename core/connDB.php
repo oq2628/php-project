@@ -15,13 +15,13 @@ class connDB{
             echo "Error creating database: " . $this->conn->error;
         }
         $sql1 = "CREATE TABLE IF NOT EXISTS `mydb`.`testdb` (
-            `id` INT(100) UNSIGNED AUTO_INCREMENT NOT NULL ,
+            `id` INT(100) UNSIGNED AUTO_INCREMENT,
             `title` VARCHAR(100) NOT NULL ,
             `description` TEXT NOT NULL ,
             `image` VARCHAR(200) NOT NULL ,
             `status` TEXT NOT NULL ,
-            `create_at` DATETIME NOT NULL ,
-            `update_at` DATETIME NOT NULL ,
+            `create_at` DATETIME,
+            `update_at` DATETIME,
             PRIMARY KEY (`id`))";
             if ($this->conn->query($sql1) === TRUE) {
             } else {
