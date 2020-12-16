@@ -3,7 +3,6 @@ class admin{
     // protected $result;
     function __construct(){
         require_once "./core/connDB.php";
-        require_once "./models/getData.php";
     }
 
     function show(){
